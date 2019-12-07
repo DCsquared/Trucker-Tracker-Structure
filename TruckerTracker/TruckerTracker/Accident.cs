@@ -33,8 +33,10 @@ namespace TruckerTracker
         private void Submit_Click(object sender, EventArgs e)
         {
             int cNum = (int)cars.Value;
+            //send report to the database
             Accidents.logAccident(cNum, notes.Text, accType.SelectedItem.ToString(), accountID);
             cars.ResetText();
+            //reset notes
             notes.Text = "";
             accType.ResetText();
         }
@@ -42,6 +44,7 @@ namespace TruckerTracker
         private void Log_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //go to the logs page
             Logs mm = new Logs(accountID);
             mm.Show();
         }
@@ -49,9 +52,10 @@ namespace TruckerTracker
         private void Reset_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //reset the accident page
             Accident mm = new Accident(accountID);
             mm.Show();
-            
+
         }
     }
 }
