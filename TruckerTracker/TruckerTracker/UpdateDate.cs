@@ -15,9 +15,7 @@ namespace TruckerTracker
     public partial class UpdateDate : Form
     {
 
-        private string fileNamePath;
-        private string destination;
-        private string filename;
+        
         private int accountID;
 
 
@@ -33,19 +31,19 @@ namespace TruckerTracker
             bool test = Trucks.setDate(calendar.SelectionStart.Year, calendar.SelectionStart.Month, calendar.SelectionStart.Day, this.accountID);
             if (test)
             {
-                label4.Show();
+                label3.Show();
             }
             else
             {
-                label5.Show();
+                label4.Show();
             }
             this.label2.Text = "Last Service Date:" + Trucks.getDate(this.accountID);
         }
         private void MainMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //MainMenu mm = new MainMenu(accountID);
-            //mm.Show();
+            MainMenu mm = new MainMenu(accountID);
+            mm.Show();
         }
 
 

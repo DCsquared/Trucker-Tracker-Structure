@@ -139,14 +139,16 @@ namespace TruckerTracker
             {
                 Console.WriteLine("Connecting to Database");
                 conn.Open();
-                string sql = "SELECT serviceDate from Trucks WHERE accountID = " + accountID + " AS 'serviceDate';"; // Need to get the user's id
+                string sql = "SELECT serviceDate AS 'serviceDate' from Trucks WHERE accountID = " + accountID + " ;"; // Need to get the user's id
                 Console.WriteLine(sql);
                 MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
                 MySqlDataReader myReader = cmd.ExecuteReader();
                 //If an Account was inserted, return true, if not, it returns false by default
                 if (myReader.Read())
                 {
-                    return myReader["serviceDate"].ToString();
+                    return ((DateTime)(myReader["serviceDate"])).ToString("MM/dd/yyyy");
+
+
                 }
             }
             catch (Exception ex)

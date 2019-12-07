@@ -136,9 +136,12 @@ namespace TruckerTracker
                 
 
                 myReader.Close();
+
                 sql = "INSERT INTO Stops (stop, stopNumber, routeID) VALUES ('" + stopName + "', " + newStopNum + " , " + routeID + ");";
                 Console.WriteLine(sql);
                 cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+                myReader.Close();
+                myReader = cmd.ExecuteReader();
 
                 //If a receipt was inserted, return true, if not, it returns false by default
                 if (cmd.ExecuteNonQuery() > 0)
