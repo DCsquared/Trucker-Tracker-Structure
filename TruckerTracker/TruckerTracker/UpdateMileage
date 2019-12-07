@@ -1,0 +1,79 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace Test2
+{
+    public partial class UpdateMileage : Form
+    {
+
+	    private string fileNamePath;
+        private string destination;
+        private string filename;
+        private int accountID;
+
+        public UpdateMileage(int loggedInID)
+        {
+			accountID = loggedInID;
+            InitializeComponent();
+        }
+
+        private void updateMileage_Click(object sender, EventArgs e)
+        {
+            bool test = update();
+            if (test)
+            {
+                label3.Show();
+            }
+            else
+            {
+                label4.Show();
+            }
+            
+        }
+
+        private void MainMenu_Click(object sender, EventArgs e)
+        {
+			label2.Visible = false;
+            this.Hide();
+            MainMenu mm = new MainMenu(accountID);
+            mm.Show();
+        }
+
+        private bool update()
+        { 
+            string connStr = "server=danialmemon.com;user=remoteUser;database=TruckerTracker;port=3306;password=GoodThinking45!;sslmode =none;";
+            MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connStr);
+            try
+            {
+                MessageBox.Show("Connecting to MySQL...");
+                conn.Open();
+                string sql = "UPDATE Trucks SET mileage = 12 where id = 1');"; // Need to get the user's id
+                Console.WriteLine(sql);
+                MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sql, conn);
+
+                //If an Account was inserted, return true, if not, it returns false by default
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            conn.Close();
+            Console.WriteLine("Done.");
+            //Return false by default
+            return false;
+        }
+
+    }
+}

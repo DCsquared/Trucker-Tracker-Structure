@@ -1,0 +1,95 @@
+W:\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.exe.config
+W:\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.exe
+W:\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.pdb
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csprojAssemblyReference.cache
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainScreen.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Login.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Properties.Resources.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.GenerateResource.cache
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.CoreCompileInputs.cache
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.exe
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.pdb
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainMenu.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Receipt.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Accident.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Mileage.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Service.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Weight.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Info.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Route.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Logs.resources
+W:\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.GPS.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csprojAssemblyReference.cache
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Accident.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.GPS.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Info.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Logs.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainMenu.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Mileage.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Receipt.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainScreen.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Login.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Properties.Resources.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Route.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Service.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Weight.resources
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.GenerateResource.cache
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.CoreCompileInputs.cache
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.exe
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.pdb
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.exe.config
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.exe
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.pdb
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\MySql.Data.dll
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\Google.Protobuf.dll
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\MySql.Data.xml
+C:\Users\Danial Memon\Documents\GraduateCS\CSC831\TruckerTracker\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.CopyComplete
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csprojAssemblyReference.cache
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Accident.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.GPS.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Info.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Logs.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainMenu.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Mileage.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Receipt.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainScreen.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Login.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Properties.Resources.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Route.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Service.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Weight.resources
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.GenerateResource.cache
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.CoreCompileInputs.cache
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.exe
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.pdb
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.exe.config
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.exe
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.pdb
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\MySql.Data.xml
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.CopyComplete
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csprojAssemblyReference.cache
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Accident.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.GPS.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Info.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Logs.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainMenu.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Mileage.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Receipt.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainScreen.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Login.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Properties.Resources.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Route.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Service.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.UpdateDate.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Weight.resources
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.GenerateResource.cache
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.CoreCompileInputs.cache
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.exe
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.pdb
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\MySql.Data.dll
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.exe.config
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.exe
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\bin\Debug\TruckerTracker.pdb
+C:\Users\Danial\Documents\GitHub\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.CopyComplete
+C:\Users\dmcan\Desktop\Trucker-Tracker\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.UpdateDate.resources
