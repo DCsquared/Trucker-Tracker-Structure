@@ -127,6 +127,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TruckerTrackerDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TTStruct.cs" />
     <Compile Include="UpdateDate.cs">
       <SubType>Form</SubType>
     </Compile>

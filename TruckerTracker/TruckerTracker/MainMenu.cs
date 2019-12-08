@@ -12,90 +12,69 @@ namespace TruckerTracker
 {
     public partial class MainMenu : Form
     {
-        private int accountID;
+        private int id;
+        //displays the currently signed in user
         public MainMenu(int accID)
         {
             InitializeComponent();
-            accountID = accID;
-            String name = Accounts.GetName(accountID);
+            id = accID;
+            String name = TTStruct.GetName(id);
             loggedIn.Text = "Logged in as: " + name; 
         }
-        //THIS WILL NO BE IN THE FINAL PROGRAM. ALL INSTANCES OF MAIN MENU MUST BE PASSED THE ACCOUNT ID
 
+        //goes to the update truck weight
         private void Button6_Click(object sender, EventArgs e)
         {
-            if (button6.BackColor == Color.Green)
-                button6.BackColor = DefaultBackColor; 
-            else
-                button6.BackColor = Color.Green;
             this.Hide();
-            Weight mm = new Weight(accountID);
+            Weight mm = new Weight(id);
             mm.Show();
         }
 
+        //goes to the upload reciept
         private void Button4_Click(object sender, EventArgs e)
         {
-            if (button4.BackColor == Color.Green)
-                button4.BackColor = DefaultBackColor;
-            else
-                button4.BackColor = Color.Green;
             this.Hide();
-            Receipt mm = new Receipt(this.accountID);
+            Receipt mm = new Receipt(this.id);
             mm.Show();
         }
 
+        //goes to the truck info
         private void Button2_Click(object sender, EventArgs e)
         {
-            if (truckInfo.BackColor == Color.Green)
-                truckInfo.BackColor = DefaultBackColor;
-            else
-                truckInfo.BackColor = Color.Green;
             this.Hide();
-            Info mm = new Info(accountID);
+            Info mm = new Info(id);
             mm.Show();
         }
 
+        //goes to the set route
         private void Button7_Click(object sender, EventArgs e)
         {
-             if (button7.BackColor == Color.Green)
-                button7.BackColor = DefaultBackColor;
-            else
-                button7.BackColor = Color.Green;
             this.Hide();
-            Route mm = new Route(accountID);
+            Route mm = new Route(id);
             mm.Show();
         }
 
+        //goes to the update service date
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (button1.BackColor == Color.Green)
-                button1.BackColor = DefaultBackColor;
-            else
-                button1.BackColor = Color.Green;
             this.Hide();
-            UpdateDate mm = new UpdateDate(accountID);
+            UpdateDate mm = new UpdateDate(id);
             mm.Show();
         }
 
+        //goes to the acciedent report
         private void Button5_Click(object sender, EventArgs e)
         {
-            if (button5.BackColor == Color.Green)
-                button5.BackColor = DefaultBackColor;
-            else
-                button5.BackColor = Color.Green;
             this.Hide();
-            Accident mm = new Accident(accountID);
+            Accident mm = new Accident(id);
             mm.Show();
         }
 
+        //goes to the update mileage
         private void Button3_Click(object sender, EventArgs e)
         {
-            if (button3.BackColor == Color.Green)
-                button3.BackColor = DefaultBackColor;
-            else
-                button3.BackColor = Color.Green;
             this.Hide();
-            UpdateMileage mm = new UpdateMileage(accountID);
+            UpdateMileage mm = new UpdateMileage(id);
             mm.Show();
         }
     }
