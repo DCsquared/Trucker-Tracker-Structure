@@ -1,6 +1,6 @@
 ﻿namespace TruckerTracker
 {
-    partial class UpdateDate
+    partial class UpdateMileage1
     {
         /// <summary>
         ///  Required designer variable.
@@ -20,7 +20,6 @@
             base.Dispose(disposing);
         }
 
-
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -29,21 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            bool dateCheck = dateChecker();
-
             //
             // MainMenu
             // 
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.updateService = new System.Windows.Forms.Button();
+            this.updateMileage = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button1 = new System.Windows.Forms.Button();
-            this.calendar = new System.Windows.Forms.MonthCalendar();
+            this.textBox2 = new System.Windows.Forms.NumericUpDown();
             this.SuspendLayout();
             // 
             // label1
@@ -59,25 +55,25 @@
             // 
             // updateMileage
             // 
-            this.updateService.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateService.ForeColor = System.Drawing.Color.Black;
-            this.updateService.Location = new System.Drawing.Point(95, 350);
-            this.updateService.Name = "button2";
-            this.updateService.Size = new System.Drawing.Size(119, 48);
-            this.updateService.TabIndex = 7;
-            this.updateService.Text = "Update";
-            this.updateService.UseVisualStyleBackColor = true;
-            this.updateService.Click += new System.EventHandler(this.updateService_Click);
+            this.updateMileage.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateMileage.ForeColor = System.Drawing.Color.Black;
+            this.updateMileage.Location = new System.Drawing.Point(95, 350);
+            this.updateMileage.Name = "button2";
+            this.updateMileage.Size = new System.Drawing.Size(119, 48);
+            this.updateMileage.TabIndex = 7;
+            this.updateMileage.Text = "Update";
+            this.updateMileage.UseVisualStyleBackColor = true;
+            this.updateMileage.Click += new System.EventHandler(this.updateMileage_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 75);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(65, 100);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(411, 65);
-            this.label2.TabIndex = 16;  
+            this.label2.TabIndex = 16;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -102,31 +98,16 @@
             this.label4.Text = "Save Unsuccessful";
             this.label4.Visible = false;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(95, 308);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(158, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "You need a Service check";
-            if (dateCheck)
-            {
-                this.label6.Visible = false;
-            }
-            
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 250);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(90, 200);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label2";
             this.label5.Size = new System.Drawing.Size(411, 65);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Select the date of your last service check";
+            this.label5.Text = "Miles Driven";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // openFileDialog1
@@ -144,12 +125,18 @@
             this.button1.Text = "Menu";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.MainMenu_Click);
-
-            //
-            //calendar
-            //
-            calendar.MaxSelectionCount = 1;
-            this.calendar.Location = new System.Drawing.Point(60, 100);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(25, 238);
+            this.textBox2.Name = "textBox1";
+            this.textBox2.ReadOnly = false;
+            this.textBox2.Size = new System.Drawing.Size(280, 131);
+            this.textBox2.TabIndex = 19;
+            this.textBox2.Maximum = 2500;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            
             // 
             // Receipt
             // 
@@ -159,35 +146,30 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.updateService);
+            this.Controls.Add(this.updateMileage);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.calendar);
+            this.Controls.Add(this.textBox2);
             this.Name = "Receipt";
             this.Text = "TruckerTracker";
             this.ResumeLayout(false);
             this.PerformLayout();
-
-
-
-            #endregion
         }
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Button signInButton;
-        private System.Windows.Forms.Button updateService;
-        private System.Windows.Forms.Button button1;
+
+        #endregion
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button updateMileage;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.MonthCalendar calendar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown textBox2;
+
+
     }
 }
 

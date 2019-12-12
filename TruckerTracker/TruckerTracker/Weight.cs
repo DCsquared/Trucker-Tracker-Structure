@@ -12,17 +12,41 @@ namespace TruckerTracker
 {
     public partial class Weight : Form
     {
-        private int accountID;
+        private int id;
 
         public Weight(int loggedInID)
         {
             InitializeComponent();
-            accountID = loggedInID;
-            label3.Text = "Total Weight: " + Trucks.getWeight(accountID) + " lbs";
+            id = loggedInID;
+            uwDecider("cur");
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void uwDecider(String func)
         {
+            switch (func)
+            {
+                case "cur":
+                    displayCur();
+                    break;
+                case "update":
+                    updateW();
+                    break;
+                case "main":
+                    mainMneu();
+                    break;
+            }
+        }
+
+        //display current weight
+        private void displayCur()
+        {
+            label3.Text = "Total Weight: " + Trucks.getWeight(id) + " lbs";
+        }
+
+        //update weight function
+        private void updateW()
+        {
+            //check if new weight has been entered
             if (nWeight.Text == "")
             {
                 label4.Visible = true;
@@ -30,12 +54,9 @@ namespace TruckerTracker
             else
             {
                 //update weight in database
-                if (Trucks.setWeight(nWeight.Text, this.accountID))
-                { 
-                    label3.Text = "Total Weight: " + nWeight.Text + " lbs";
-                    label4.Visible = false;
-                    tw.Visible = true;
-                    nWeight.Text = "";
+                if (Trucks.setWeight(nWeight.Text, this.id))
+                {
+                    displayNew();
                 }
                 else
                 {
@@ -44,12 +65,32 @@ namespace TruckerTracker
             }
         }
 
-        //go to main menu
-        private void button2_Click(object sender, EventArgs e)
+        //display new weight
+        private void displayNew()
+        {
+            label3.Text = "Total Weight: " + nWeight.Text + " lbs";
+            label4.Visible = false;
+            tw.Visible = true;
+            nWeight.Text = "";
+        }
+
+        //goes to main menu
+        private void mainMneu()
         {
             this.Hide();
-            MainMenu mm = new MainMenu(accountID);
+            MainMenu mm = new MainMenu(id);
             mm.Show();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            uwDecider("update");
+        }
+
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            uwDecider("main");
         }
     }
 }

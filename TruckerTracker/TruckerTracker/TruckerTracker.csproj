@@ -128,17 +128,17 @@
       <DependentUpon>TruckerTrackerDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="TTStruct.cs" />
-    <Compile Include="UpdateDate.cs">
+    <Compile Include="UpdateDate1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateDate.Designer.cs">
-      <DependentUpon>UpdateDate.cs</DependentUpon>
+    <Compile Include="UpdateDate1.Designer.cs">
+      <DependentUpon>UpdateDate1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateMileage.cs">
+    <Compile Include="UpdateMileage1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateMileage.Designer.cs">
-      <DependentUpon>UpdateMileage.cs</DependentUpon>
+    <Compile Include="UpdateMileage1.Designer.cs">
+      <DependentUpon>UpdateMileage1.cs</DependentUpon>
     </Compile>
     <Compile Include="Weight.cs">
       <SubType>Form</SubType>
@@ -189,8 +189,8 @@
     <EmbeddedResource Include="Service.resx">
       <DependentUpon>Service.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateDate.resx">
-      <DependentUpon>UpdateDate.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateDate1.resx">
+      <DependentUpon>UpdateDate1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Weight.resx">
       <DependentUpon>Weight.cs</DependentUpon>

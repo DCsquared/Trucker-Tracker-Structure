@@ -12,11 +12,45 @@ namespace TruckerTracker
 {
     public partial class Service : Form
     {
-        private int accountID;
+        private int id;
         public Service(int accID)
         {
-            accountID = accID;
+            id = accID;
             InitializeComponent();
+            upSerDecider(0);
+        }
+
+        private void upSerDecider(int i)
+        {
+            if(i == 0)
+             displayCurrent();
+            else if(i == 1)
+                updateServ();
+            else
+             mainMneu();
+        }
+
+        private void displayCurrent()
+        {
+
+        }
+
+        private void displayNew()
+        {
+
+        }
+
+        private void updateServ()
+        {
+
+        }
+
+        //goes to main menu
+        private void mainMneu()
+        {
+            this.Hide();
+            MainMenu mm = new MainMenu(id);
+            mm.Show();
         }
 
         private void Update_Click(object sender, EventArgs e)
@@ -29,7 +63,7 @@ namespace TruckerTracker
             {
                 update.BackColor = DefaultBackColor;
                 this.Hide();
-                MainMenu mm = new MainMenu(accountID);
+                MainMenu mm = new MainMenu(id);
                 mm.Show();
             }
             else
