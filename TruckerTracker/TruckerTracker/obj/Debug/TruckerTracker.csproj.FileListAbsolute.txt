@@ -103,13 +103,11 @@ D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTrac
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Info.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Logs.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainMenu.resources
-D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Mileage.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Receipt.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.MainScreen.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Login.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Properties.Resources.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Route.resources
-D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Service.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.UpdateDate1.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.Weight.resources
 D:\Trucker-Tracker-Structure\TruckerTracker\TruckerTracker\obj\Debug\TruckerTracker.csproj.GenerateResource.cache

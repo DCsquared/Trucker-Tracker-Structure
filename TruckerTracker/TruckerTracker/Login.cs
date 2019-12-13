@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace TruckerTracker
 {
+    //login form allows the user to login and use the app
     public partial class Login : Form
     {
+        //constructor for the login form
         public Login()
         {
             InitializeComponent();
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //login button
         private void Button1_Click(object sender, EventArgs e)
         {
             loginDecider();
@@ -30,7 +28,7 @@ namespace TruckerTracker
         //the login algorithm decider for the process 1 of DFD
         private void loginDecider()
         {
-            int id = TTStruct.passLoginInfo(usrnm.Text, pwrd.Text);
+            int id = TTStruct.Login(usrnm.Text, pwrd.Text);
             if (displayOutput(id))
             {
                 mainMenu(id);

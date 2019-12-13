@@ -10,19 +10,27 @@ using System.Windows.Forms;
 
 namespace TruckerTracker
 {
+    //Logs allows the user to view any accident reports that they have filed
     public partial class Logs : Form
     {
+        /*
+         * id is the ID of the logged-in user
+         * dates is a string that holds the queried dates of the accidents that the user has had
+         * accidents is a string that holds all of the report of the selected accident date
+        */
         private int id;
         private String dates;
         private String accidents;
 
+        //the constructor for the logs form
         public Logs(int loggedInID)
         {
             InitializeComponent();
             id = loggedInID;
-            logDecider("main");
+            logDecider("display");
         }
 
+        //the decider for the logs fofm
         private void logDecider(String n)
         {
             switch (n)
@@ -39,11 +47,13 @@ namespace TruckerTracker
             }
         }
 
+        //back button that takes them to the main menu
         private void BackButton_Click(object sender, EventArgs e)
         {
             logDecider("main");
         }
         
+        //grabs the report of the selected date
         private void LogDates_SelectedIndexChanged(object sender, EventArgs e)
         {
             logDecider("report");
@@ -88,7 +98,7 @@ namespace TruckerTracker
                 date = dateN[2] + "-" + dateN[0] + "-" + dateN[1];
 
                 //grabs the selected accident from the database
-                accidents = Accidents.requestLog(date + dsub, id);
+                accidents = TTStruct.requestLog(date + dsub, id);
 
                 //parses the string into 3 sections for the cars, accident type, and the notes
                 String[] accident = accidents.Split('|');

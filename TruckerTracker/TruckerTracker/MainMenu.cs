@@ -10,10 +10,13 @@ using System.Windows.Forms;
 
 namespace TruckerTracker
 {
+    //main menu form allows the user to select what they want to do in th app
     public partial class MainMenu : Form
     {
+        //id is the ID of the logged-in user
         private int id;
-        //displays the currently signed in user
+        
+        //the constructor for the main menu form
         public MainMenu(int accID)
         {
             InitializeComponent();
@@ -21,10 +24,12 @@ namespace TruckerTracker
             mDecider("display");
         }
 
+        //the decider for the main menu form
         private void mDecider(String m)
         {
             switch (m)
             {
+                //displays the currently signed in user
                 case "display":
                     String name = TTStruct.GetName(id);
                     loggedIn.Text = "Logged in as: " + name;

@@ -12,19 +12,27 @@ using System.Windows.Forms;
 
 namespace TruckerTracker
 {
+    //allows the user to upload a picture of the reciept
     public partial class Receipt : Form
     {
+        /* fileNamePath is the path to the file filename
+         * destination is the path to the receipts folder
+         * filename is the naem of the target file without the path
+         * id is the id of the logged in user
+         */
         private string fileNamePath;
         private string destination;
         private string filename;
         private int id;
 
+        //the constructor for the receipt form
         public Receipt(int loggedInID)
         {
             id = loggedInID;         
             InitializeComponent();
         }
         
+        //the decider for the upload receipt page
         private void urDecider(String n)
         {
             switch (n)
@@ -41,19 +49,19 @@ namespace TruckerTracker
             }
         }
 
-        //upload
+        //upload button
         private void Button2_Click(object sender, EventArgs e)
         {
             urDecider("upload");
         }
 
-        //select file
+        //select file button
         private void Button3_Click(object sender, EventArgs e)
         {
             urDecider("selectF");
         }
 
-        //main menu
+        //main menu button
         private void Button1_Click(object sender, EventArgs e)
         {
             button2.BackColor = DefaultBackColor;
@@ -75,6 +83,7 @@ namespace TruckerTracker
             }
             else
             {
+                //display error if wrong or no file was select
                 label2.Text = "ERROR: file not selected";
                 label2.Visible = true;
             }
@@ -86,7 +95,7 @@ namespace TruckerTracker
             DialogResult result = openFileDialog1.ShowDialog();
             if (result == DialogResult.OK) // Test result.
             {
-                //Do whatever you want
+                //process for getting the file and saving a copy to in app folder
 
                 fileNamePath = this.openFileDialog1.FileName;
                 filename = Path.GetFileName(fileNamePath);

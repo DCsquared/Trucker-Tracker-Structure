@@ -6,13 +6,20 @@ using System.Windows.Forms;
 
 namespace TruckerTracker
 {
+    //Route form allows the user to add or remove stops from their route
     public partial class Route : Form
     {
+        /* id is the ID of the logged-in user
+         * routeID is the ID of the route of the logged-in user
+         * currentStop is the current stop the user is driving towards
+         * toSetDataTable is the Data Table that populates the route table.
+         */
         private int id;
         private int routeID;
         private string currentStop;
         DataTable toSetDataTable;
 
+        //the constructor for the set route form
         public Route(int accID)
         {
             InitializeComponent();
@@ -20,6 +27,7 @@ namespace TruckerTracker
             srDecider("cur");
         }
 
+        // the decider for the set route form
         private void srDecider(String n)
         {
             switch (n)
@@ -39,11 +47,13 @@ namespace TruckerTracker
             }
         }
         
+        //the back button that goes to the m
         private void Back_Click(object sender, EventArgs e)
         {
             srDecider("main");
         }
 
+        //the add route button
         private void AddRoute_Click(object sender, EventArgs e)
         {
             srDecider("add");
@@ -61,7 +71,8 @@ namespace TruckerTracker
                 routeList.DataSource = toSetDataTable;
             }
         }
-
+        
+        //start route button
         private void StartRoute_Click(object sender, EventArgs e)
         {
             srDecider("gps");
@@ -83,17 +94,6 @@ namespace TruckerTracker
             newGPS.Show();
         }
 
-        //display route as it gets updated
-        private void displayR()
-        {
-            routeID = TTStruct.GetCurrentRoute(id);
-            currentStop = TTStruct.GetCurrentStop(routeID);
-
-            toSetDataTable = TTStruct.LoadRoutes(routeID);
-            routeList.DataSource = toSetDataTable;
-            CreateUnboundButtonColumn();
-        }
-
         //add address to the route
         private void addR()
         {
@@ -110,6 +110,7 @@ namespace TruckerTracker
             routeID = TTStruct.GetCurrentRoute(id);
             currentStop = TTStruct.GetCurrentStop(routeID);
 
+            //displays the addresses for the current route
             toSetDataTable = TTStruct.LoadRoutes(routeID);
             routeList.DataSource = toSetDataTable;
             CreateUnboundButtonColumn();

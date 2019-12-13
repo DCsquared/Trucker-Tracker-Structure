@@ -10,16 +10,20 @@ using System.Windows.Forms;
 
 namespace TruckerTracker
 {
+    //Accident form allows the user to file and upload an accident report
     public partial class Accident : Form
     {
+        //id is the ID of the logged-in user
         private int id;
 
+        //the constructor for the accident report
         public Accident(int loggedInID)
         {
             InitializeComponent();
             id = loggedInID;
         }
 
+        //the decider of the accident form
         private void uaDecider(String n)
         {
             switch (n)
@@ -39,17 +43,20 @@ namespace TruckerTracker
             }
         }
 
+        //the back button the takes the user to the main menu
         private void BackButton_Click(object sender, EventArgs e)
         {
             BackButton.BackColor = DefaultBackColor;
             uaDecider("main");
         }
 
+        //the submit button 
         private void Submit_Click(object sender, EventArgs e)
         {
             uaDecider("upload");
         }
 
+        //the log button that takes
         private void Log_Click(object sender, EventArgs e)
         {
             uaDecider("log");

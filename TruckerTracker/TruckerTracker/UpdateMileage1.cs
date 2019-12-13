@@ -12,17 +12,21 @@ using MySql.Data.MySqlClient;
 
 namespace TruckerTracker
 {
+    //UpdateMileage1 form allows the user to update the total miles that they've driven so far
     public partial class UpdateMileage1 : Form
     {
-       private int id;
+        //id is the ID of the logged-in user
+        private int id;
 
+        //the constrcutor for the UpdateMileage1 form
         public UpdateMileage1(int loggedInID)
         {
             id = loggedInID;
             InitializeComponent();
             decider(0);
         }
-        
+
+        //the decider for the UpdateMileage1
         private void decider(int input)
         {
             if (input == 0)
@@ -37,11 +41,13 @@ namespace TruckerTracker
             bool test = TTStruct.updateDistance(textBox2.Value, id);
             if (test)
             {
+                //show erro message if update was successful and display new mileage
                 label3.Show();
                 displayNew();
             }
             else
             {
+                //show error message if update failed
                 label4.Show();
             }
         }
@@ -52,6 +58,7 @@ namespace TruckerTracker
             this.label2.Text = "Total Miles:" + TTStruct.getMileage(id);
         }
 
+        //the update button
         private void updateMileage_Click(object sender, EventArgs e)
         {
             decider(2);
@@ -63,7 +70,7 @@ namespace TruckerTracker
             this.label2.Text = "Total Miles:" + TTStruct.getMileage(id);
         }
 
-
+        //the main menu button
         private void MainMenu_Click(object sender, EventArgs e)
         {
             mainMneu();

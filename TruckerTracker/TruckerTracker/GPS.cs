@@ -12,8 +12,17 @@ using System.Windows.Forms;
 
 namespace TruckerTracker
 {
+    //GPS form displays the curent time the user has been on the road as well as the stops left on their route. 
     public partial class GPS : Form
     {
+        /* id is the ID of the logged-in user
+         * routeID is the ID of the route of the logged-in user
+         * count keeps track of the number of seconds that the user has been driving
+         * hours is the number of hours the user has been on the road
+         * minutes is the number of minutes the user has been on the road
+         * seconds is the number of seconds the user has been on the road
+         * toSetDataTable is the Data Table that populates the route table.
+         */
         private int id;
         private int routeID;
         private int count = 0;
@@ -22,7 +31,7 @@ namespace TruckerTracker
         private int seconds;
         private DataTable toSetDataTable;
 
-
+        //the constructor for the gps form 
         public GPS(int accID, int rtID)
         {
             id = accID;
@@ -31,6 +40,7 @@ namespace TruckerTracker
             gpsDecider("display");
         }
 
+        //the decider for the set route page
         private void gpsDecider(String n)
         {
             switch (n)
@@ -86,6 +96,7 @@ namespace TruckerTracker
             hours = count / 3600;
             minutes = (count - (hours * 3600)) / 60;
             seconds = (count - (hours * 3600)) - (minutes * 60);
+            //formats the timer to have 00:00:00 format
             if (hours < 10)
                 h = "0";
             else
@@ -107,6 +118,7 @@ namespace TruckerTracker
         {
            var senderGrid = (DataGridView)sender;
 
+            //makes sure the route has stops to remove
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
                 TTStruct.RemoveStop(e.RowIndex + 1, routeID);
@@ -115,6 +127,7 @@ namespace TruckerTracker
             }
         }
 
+        //reset timer button for new day
         private void Button1_Click(object sender, EventArgs e)
         {
             gpsDecider("reset");
@@ -140,7 +153,7 @@ namespace TruckerTracker
             Console.WriteLine("Done.");
         }
 
-        //update the timer
+        //pause or resume the timer
         private void timerUpdate(String t)
         {
             if (t.Equals("start"))

@@ -56,8 +56,6 @@
     <Compile Include="Accident.Designer.cs">
       <DependentUpon>Accident.cs</DependentUpon>
     </Compile>
-    <Compile Include="Accounts.cs" />
-    <Compile Include="Routes.cs" />
     <Compile Include="GPS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,14 +80,6 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mileage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mileage.Designer.cs">
-      <DependentUpon>Mileage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Accidents.cs" />
-    <Compile Include="Trucks.cs" />
     <Compile Include="Receipt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,12 +105,6 @@
     </Compile>
     <Compile Include="Route.Designer.cs">
       <DependentUpon>Route.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Service.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Service.Designer.cs">
-      <DependentUpon>Service.cs</DependentUpon>
     </Compile>
     <Compile Include="TruckerTrackerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -161,9 +145,6 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mileage.resx">
-      <DependentUpon>Mileage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Receipt.resx">
       <DependentUpon>Receipt.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,9 +166,6 @@
     </Compile>
     <EmbeddedResource Include="Route.resx">
       <DependentUpon>Route.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Service.resx">
-      <DependentUpon>Service.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDate1.resx">
       <DependentUpon>UpdateDate1.cs</DependentUpon>

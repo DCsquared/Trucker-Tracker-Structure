@@ -10,10 +10,13 @@ using System.Windows.Forms;
 
 namespace TruckerTracker
 {
+    //Weight form allows the user to update the current weight of the truck 
     public partial class Weight : Form
     {
+        //id is the ID of the logged-in user
         private int id;
 
+        //the constructor for the weight form
         public Weight(int loggedInID)
         {
             InitializeComponent();
@@ -21,6 +24,7 @@ namespace TruckerTracker
             uwDecider("cur");
         }
 
+        //the decider for the weight form
         private void uwDecider(String func)
         {
             switch (func)
@@ -40,21 +44,21 @@ namespace TruckerTracker
         //display current weight
         private void displayCur()
         {
-            label3.Text = "Total Weight: " + Trucks.getWeight(id) + " lbs";
+            label3.Text = "Total Weight: " + TTStruct.getWeight(id) + " lbs";
         }
 
         //update weight function
         private void updateW()
         {
-            //check if new weight has been entered
+            //check if the new weight has been entered
             if (nWeight.Text == "")
             {
                 label4.Visible = true;
             }
             else
             {
-                //update weight in database
-                if (Trucks.setWeight(nWeight.Text, this.id))
+                //update the weight in database
+                if (TTStruct.setWeight(nWeight.Text, this.id))
                 {
                     displayNew();
                 }
@@ -65,7 +69,7 @@ namespace TruckerTracker
             }
         }
 
-        //display new weight
+        //display the new weight
         private void displayNew()
         {
             label3.Text = "Total Weight: " + nWeight.Text + " lbs";
@@ -82,12 +86,13 @@ namespace TruckerTracker
             mm.Show();
         }
 
+        //the update weight button
         private void Button1_Click(object sender, EventArgs e)
         {
             uwDecider("update");
         }
 
-        
+        //the main menu button
         private void button2_Click(object sender, EventArgs e)
         {
             uwDecider("main");
